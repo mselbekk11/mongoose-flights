@@ -7,16 +7,18 @@ module.exports = {
 }
 
 async function newTicket(req, res) {
-  res.render('tickets/new', { title: 'Add Performer' })
+  res.render('tickets/new', { title: 'Add Performer', ticketId: req.params.id })
 }
 
 async function create(req, res) {
   try {
+    req.body.flight = req.params.id
+    console.log(req.body)
     await Ticket.create(req.body)
   } catch (err) {
     console.log(err)
   }
-  res.redirect('/tickets/new')
+  res.redirect(`/flights/${req.params.id}`)
   // res.render('tickets/new', { errorMsg: err.message })
 }
 

@@ -2,7 +2,7 @@
 
 <h2>This is the create ticket page</h2>
 
-<form action="/tickets" method="POST">
+<form action="/flights/<%= ticketId %>/tickets" method="POST">
   <label>Seat</label>
   <input name="seat" required pattern="[A-F][1-9]\d?" />
   <label>Price</label>
