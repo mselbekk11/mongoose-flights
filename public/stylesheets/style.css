@@ -7,6 +7,73 @@ a {
   color: #00B7FF;
 }
 
+h2 {
+  margin-top: 0px;
+}
+
 nav {
   margin-bottom: 30px;
+}
+
+form {
+  display: grid;
+}
+
+form label {
+display: block;
+ width: 100%!important;
+}
+
+ table.listed-flights {
+  border: 1px solid #000;
+  padding: 20px;
+}
+
+th {
+  padding: 6px;
+}
+
+td {
+  padding: 6px;
+}
+
+.enter-flight {
+  border: 1px solid #000;
+  padding: 20px;
+}
+
+#show-page {
+  border: 1px solid #000;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.add-stop {
+  border: 1px solid #000;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.list-destinations {
+  border: 1px solid #000;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.tickets-created {
+  border: 1px solid #000;
+  padding: 20px;
+}
+a.btn {
+  background-color: red;
+  text-align: center;
+  color: #fff;
+  padding: 10px 0px;
+  text-decoration: none;
+  margin-top: 20px;
 }
