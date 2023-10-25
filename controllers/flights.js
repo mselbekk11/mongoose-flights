@@ -20,21 +20,6 @@ async function show(req, res) {
   res.render('flights/show', { title: 'Flight Detail', flight, tickets })
 }
 
-// async function show(req, res) {
-//   const flight = await Flight.findById(req.params.id, function (err, flight) {
-//     Ticket.find({ flight: flight._id }, function (err, tickets) {})
-//   })
-//   res.render('flights/show', { title: 'Flight Detail', flight })
-// }
-
-// async function show(req, res) {
-//   await Flight.findById(req.params.id, function (err, flight) {
-//     Ticket.find({ flight: flight._id }, function (err, tickets) {
-//       // Now you can pass both the flight and tickets in the res.render call
-//       res.render('flights/show', { title: 'Flight Detail', flight, tickets })
-//     })
-//   })
-// }
 
 function newFlight(req, res) {
   res.render('flights/new', { errorMsg: '' })

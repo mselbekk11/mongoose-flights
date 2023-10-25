@@ -19,15 +19,5 @@ async function create(req, res) {
     console.log(err)
   }
   res.redirect(`/flights/${req.params.id}`)
-  // res.render('tickets/new', { errorMsg: err.message })
 }
 
-// async function create(req, res) {
-//   try {
-//     await Flight.create(req.body)
-//     res.redirect('/flights/new')
-//   } catch (err) {
-//     console.log(err)
-//     res.render('flights/new', { errorMsg: err.message })
-//   }
-// }

@@ -79,15 +79,15 @@
   <h2>Tickets created for flight</h2>
 
   <% tickets.forEach(function(t) { %>
-  <div><%= t.seat %></div>
-  <div><%= t.price %></div>
+  <div>Seat: <%= t.seat %></div>
+  <div>Price: <%= t.price %></div>
   <% }) %>
   <div class="grid">
-    <div>Seat</div>
-    <div></div>
+    <!-- <div>Seat</div>
+    <div></div> -->
     <!-- Seat Squids-->
-    <div>Price</div>
-    <div></div>
+    <!-- <div>Price</div>
+    <div></div> -->
     <!-- Price Squids-->
 
     <a class="btn" href="/flights/<%= flight._id %>/tickets/new"
